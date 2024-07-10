@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Star</title>
     <style>
+        h1{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: larger;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
         .container{
             background-color: 	#FF7F50;
             display: block;
             margin: 20px auto;
-            height: 500px;
+            height: 300px;
             width: 500px;
+            text-align: left;
             padding: 20px;
+            box-shadow: 2px 2px 5px 10px gray;
+            border-radius: 10px;
+        }
+        .entry{
+            height: 30px;
+            padding: 5px;
         }
         .text{
             margin: 10px;
             font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .btn {
             padding: 5px 10px;
@@ -23,24 +40,34 @@
             border-radius: 4px;
             margin-top: 10px;
             margin-bottom: 10px;
+            font-weight:700;
+            margin-left: 10px;
         }
+        .label{
+            font-family:'Courier New', Courier, monospace;
+            color: black;
+            font-size: larger;
+            font-weight: bolder;
+            margin-left: 15px;
 
+        }
     </style>
 </head>
 <body>
+    <h1>WELCOME TO TEXT STAR !!!!</h1>
     <div class="container">
-        <label>Enter your string :
+        <label class="label">Enter your string :
         </label>
         <input type="text" id="entry">
         <br/>
         <span id="upper" class="text">The string in upper case is :</span><br/>
         <button onclick="btn_action('upper')" class="btn">click here</button>
         <br/>
-        <span id="lower">The string in lower case is :</span><br/>
+        <span id="lower"class="text"  >The string in lower case is :</span><br/>
         <button onclick="btn_action('lower')" class="btn">click here</button><br/>
-        <span id="length">The length of  string is :</span><br/>
+        <span id="length" class="text">The length of  string is :</span><br/>
         <button onclick="btn_action('length')" class="btn">click here</button><br/>
-        <span id="words">The no of words is : </span><br/>
+        <span id="words" class="text">The no of words is : </span><br/>
         <button onclick="btn_action('words')" class="btn">click here</button><br/>
         
         <script>
