@@ -21,10 +21,13 @@
         <input type="text" id="entry">
         <br/>
         <span id="upper">The string in upper case is :</span><br/>
+        <button onclick="btn_action('upper')">click here</button>
+        <br/>
         <span id="lower">The string in lower case is :</span><br/>
+        <button onclick="btn_action('lower')">click here</button>
         <span id="length">The length of  string is :</span><br/>
         <span id="words">The no of words is : </span><br/>
-        <button onclick="btn_action('upper')">click here</button>
+        
         <script>
             function btn_action(p){
                 ans = document.getElementById("entry")
@@ -33,6 +36,11 @@
                    ustring = document.getElementById("upper")
                    fans=inp.toUpperCase()
                     ustring.innerText = `The string in upper case is : ${fans}`
+                }
+                else if (p=="lower"){
+                    lstring = document.getElementById("lower")
+                   fans=inp.toLowerCase()
+                    lstring.innerText = `The string in lower case is : ${fans}`
                 }
             }
         </script>
