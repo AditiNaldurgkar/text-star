@@ -18,13 +18,21 @@
     <div class="container">
         <label>Enter your string :
         </label>
-        <input type="text">
+        <input type="text" id="entry">
         <br/>
-        <span>The string in upper case is :</span><br/>
-        <span>The string in lower case is :</span><br/>
-        <span>The length of  string is :</span><br/>
-        <span>The no of words is : </span><br/>
-        <button onclick="btn-action()">click here</button>
+        <span id="upper">The string in upper case is :</span><br/>
+        <span id="lower">The string in lower case is :</span><br/>
+        <span id="length">The length of  string is :</span><br/>
+        <span id="words">The no of words is : </span><br/>
+        <button onclick="btn_action('upper')">click here</button>
         <script>
-            
+            function btn_action(p){
+                ans = document.getElementById("entry")
+                inp = ans.value
+                if (p=="upper") {
+                   ustring = document.getElementById("upper")
+                   fans=inp.toUpperCase()
+                    ustring.innerText = `The string in upper case is : ${fans}`
+                }
+            }
         </script>
