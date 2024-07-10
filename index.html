@@ -11,7 +11,20 @@
             margin: 20px auto;
             height: 500px;
             width: 500px;
+            padding: 20px;
         }
+        .text{
+            margin: 10px;
+            font-weight: bold;
+        }
+        .btn {
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -20,15 +33,15 @@
         </label>
         <input type="text" id="entry">
         <br/>
-        <span id="upper">The string in upper case is :</span><br/>
-        <button onclick="btn_action('upper')">click here</button>
+        <span id="upper" class="text">The string in upper case is :</span><br/>
+        <button onclick="btn_action('upper')" class="btn">click here</button>
         <br/>
         <span id="lower">The string in lower case is :</span><br/>
-        <button onclick="btn_action('lower')">click here</button><br/>
+        <button onclick="btn_action('lower')" class="btn">click here</button><br/>
         <span id="length">The length of  string is :</span><br/>
-        <button onclick="btn_action('length')">click here</button><br/>
+        <button onclick="btn_action('length')" class="btn">click here</button><br/>
         <span id="words">The no of words is : </span><br/>
-        <button onclick="btn_action('words')">click here</button><br/>
+        <button onclick="btn_action('words')" class="btn">click here</button><br/>
         
         <script>
             function btn_action(p){
