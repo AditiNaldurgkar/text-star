@@ -24,9 +24,11 @@
         <button onclick="btn_action('upper')">click here</button>
         <br/>
         <span id="lower">The string in lower case is :</span><br/>
-        <button onclick="btn_action('lower')">click here</button>
+        <button onclick="btn_action('lower')">click here</button><br/>
         <span id="length">The length of  string is :</span><br/>
+        <button onclick="btn_action('length')">click here</button><br/>
         <span id="words">The no of words is : </span><br/>
+        <button onclick="btn_action('words')">click here</button><br/>
         
         <script>
             function btn_action(p){
@@ -41,6 +43,11 @@
                     lstring = document.getElementById("lower")
                    fans=inp.toLowerCase()
                     lstring.innerText = `The string in lower case is : ${fans}`
+                }
+                else if (p=="length"){
+                    lenstring = document.getElementById("length")
+                   fans=inp.length
+                    lenstring.innerText = `The length of string is : ${fans}`
                 }
             }
         </script>
